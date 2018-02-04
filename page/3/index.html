@@ -351,19 +351,19 @@
 
 
   
-    <article id="post-software/chrome" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-tools/Centos_ca" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/software/chrome.html">让 chrome 变得更好用</a>
+      <a class="article-title" href="/tools/Centos_ca.html">CentOS 导入 CA 证书</a>
     </h1>
   
 
         
-        <a href="/software/chrome.html" class="archive-article-date">
+        <a href="/tools/Centos_ca.html" class="archive-article-date">
   	<time datetime="2018-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
 </a>
         
@@ -374,23 +374,17 @@
         
 
 
-<div id="outline-container-org1ad9c13" class="outline-2">
-<h2 id="org1ad9c13"><span class="section-number-2">1</span> chrome</h2>
+<div id="outline-container-org8598051" class="outline-2">
+<h2 id="org8598051"><span class="section-number-2">1</span> CentOS 导入 CA 证书</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orga533ca7" class="outline-3">
-<h3 id="orga533ca7"><span class="section-number-3">1.1</span> extension</h3>
-<div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-org54ec634" class="outline-4">
-<h4 id="org54ec634"><span class="section-number-4">1.1.1</span> uget 扩展，使用 uget 下载</h4>
-<div class="outline-text-4" id="text-1-1-1">
-<div class="org-src-container">
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/linux/install_uget_chrome_wrapper.sh</span><br><span class="line">sudo ./install_uget_chrome_wrapper.sh</span><br></pre></td></tr></table></figure>
-</div>
 <p>
-然后在 chrome 商店下载插件，本地 uget+aria2，速度简直超快
+由于某些需要在设置好 xxnet 的相关属性后，
+通过 web 浏览器访问网站的时候总是报证书错误，
+把相关的证书导入到浏览器里面也不行，如是有了以下的方法：
+把 CA 放到/etc/pki/ca-trust/source/anchors，
+在命令行运行 sudo update-ca-trust，这样证书就导入到系统中去了。
+这样就可以顺利的使用 xxnet 了。
 </p>
-</div>
-</div>
 </div>
 </div>
 
@@ -408,11 +402,15 @@ Last Updated 2018-02-04 Sun 22:38.<br>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">software</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tools</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">chrome</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CA</a>
         		</li>
       		
 		</ul>
@@ -424,7 +422,7 @@ Last Updated 2018-02-04 Sun 22:38.<br>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/software//" class="article-tag-list-link color4">software</a>
+        			<a href="/categories/tools//" class="article-tag-list-link color1">tools</a>
         		</li>
       		
 		</ul>
@@ -433,7 +431,7 @@ Last Updated 2018-02-04 Sun 22:38.<br>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/software/chrome.html">展开全文 >></a>
+          <a class="article-more-a" href="/tools/Centos_ca.html">展开全文 >></a>
         </p>
       
 
@@ -535,6 +533,107 @@ Last Updated 2018-02-04 Sun 22:38.<br>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/data-structure/search/search-half.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-data-structure/sort/bubble-sort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/data-structure/sort/bubble-sort.html">冒泡排序</a>
+    </h1>
+  
+
+        
+        <a href="/data-structure/sort/bubble-sort.html" class="archive-article-date">
+  	<time datetime="2018-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+
+
+<div id="outline-container-orga83ac23" class="outline-2">
+<h2 id="orga83ac23"><span class="section-number-2">1</span> 代码</h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span><br><span class="line"></span>{</span><br><span class="line">  <span class="keyword">int</span> n;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">  <span class="keyword">int</span> *p=<span class="built_in">malloc</span>( (n+<span class="number">1</span>)*<span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  <span class="keyword">int</span> j;</span><br><span class="line">  <span class="keyword">int</span> test;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,p+i);</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n-<span class="number">1</span>;i++)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>; j&lt;=n-i; j++){</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span>(p[j]&gt;p[j+<span class="number">1</span>]){</span><br><span class="line">	test=p[j];</span><br><span class="line">	p[j]=p[j+<span class="number">1</span>];</span><br><span class="line">	p[j+<span class="number">1</span>]=test;</span><br><span class="line">      }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,p[i]);</span><br><span class="line">    <span class="keyword">if</span>(i!=n)</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">  }</span><br><span class="line">  <span class="built_in">free</span>(p);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+
+Last Updated 2018-02-04 Sun 22:38.<br>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data-structure</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/data-structure//" class="article-tag-list-link color5">data-structure</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/data-structure/sort/bubble-sort.html">展开全文 >></a>
         </p>
       
 
@@ -766,102 +865,6 @@ Last Updated 2018-02-04 Sun 22:38.<br>
 
 
   
-    <article id="post-data-structure/stack/stack-chain" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/data-structure/stack/stack-chain.html">链式栈</a>
-    </h1>
-  
-
-        
-        <a href="/data-structure/stack/stack-chain.html" class="archive-article-date">
-  	<time datetime="2018-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div id="outline-container-org74ee026" class="outline-2">
-<h2 id="org74ee026"><span class="section-number-2">1</span> 描述</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>这是一个栈的实现</li>
-<li>使用的是双向非顺序线性表的方式</li>
-<li>线性表的头部是栈顶，线性表的尾部是栈底</li>
-</ul>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data-structure</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/data-structure//" class="article-tag-list-link color5">data-structure</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/data-structure/stack/stack-chain.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-data-structure/sort/select-sort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -963,6 +966,102 @@ Last Updated 2018-02-04 Sun 22:38.<br>
 
 
   
+    <article id="post-data-structure/stack/stack-chain" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/data-structure/stack/stack-chain.html">链式栈</a>
+    </h1>
+  
+
+        
+        <a href="/data-structure/stack/stack-chain.html" class="archive-article-date">
+  	<time datetime="2018-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div id="outline-container-org74ee026" class="outline-2">
+<h2 id="org74ee026"><span class="section-number-2">1</span> 描述</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>这是一个栈的实现</li>
+<li>使用的是双向非顺序线性表的方式</li>
+<li>线性表的头部是栈顶，线性表的尾部是栈底</li>
+</ul>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data-structure</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/data-structure//" class="article-tag-list-link color5">data-structure</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/data-structure/stack/stack-chain.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-data-structure/stack/stack-order" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1030,102 +1129,6 @@ Last Updated 2018-02-04 Sun 22:38.<br>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/data-structure/stack/stack-order.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-data-structure/string/string-arr" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/data-structure/string/string-arr.html">KMP 算法</a>
-    </h1>
-  
-
-        
-        <a href="/data-structure/string/string-arr.html" class="archive-article-date">
-  	<time datetime="2018-02-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div id="outline-container-orgfcf7ba6" class="outline-2">
-<h2 id="orgfcf7ba6"><span class="section-number-2">1</span> 描述</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>本程序是模式匹配算法的改进，克努特-莫里斯-普拉特操作（KMP 算法）的实现。</li>
-<li>通过命令行传入参数，并输出。</li>
-<li>输出数组 arr 是从 0 开始计数的，数组所存索引也是从 0 开始计数的</li>
-</ul>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data-structure</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/data-structure//" class="article-tag-list-link color5">data-structure</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/data-structure/string/string-arr.html">展开全文 >></a>
         </p>
       
 
@@ -1276,38 +1279,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">software</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">gdb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">cmus</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">gnome3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">inputmethod</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mpv</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">tools</a>
               </li>
              
@@ -1341,6 +1312,38 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">virtualbox</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">software</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">cmus</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">gdb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">gnome3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">inputmethod</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mpv</a>
               </li>
              
               <li class="article-tag-list-item">
